@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="Privacy_policy.css" />
+  <title>Privacy policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="Privacy_policy.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h2 id="logo">RAVENZ</h2>
+  <input type="checkbox" id="menu-toggle" />
+
+  <!-- الشرط الي بتفتح المنيو -->
+  <label class="MenuIcon" for="menu-toggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </label>
+
+  <!-- الحجات اللي جوا السايد بار -->
+  <div id="sidebar" class="sidebar">
+    <ul>
+      <li><a href="Home_Page.html">Home page</a></li>
+      <li><a href="CarBrands.html">Cars</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="contact_Us.html">Contact</a></li>
+      <li><a href="Privacy_policy.html">Privacy policy</a></li>
+    </ul>
+  </div>
+
+  <div class="headig">
+    <h1>Privacy Policy</h1>
+    <p>
+      The following privacy policy offers you an overview of which personal
+      data we as Motor Match collect during your visit to our website and how
+      it is used.
+    </p>
+  </div>
+
+  <hr />
+
+  <div class="container">
+    <section class="Privacy-policy">
+      <div class="Privacy-imge">
+        <!-- صورة يمكن إضافتها -->
+        <!-- <img src="imges/5a3d7fbc3679eff1e28e68296356f9f4.png"> -->
+      </div>
+
+      <div class="Privacy-content">
+        <p>
+          <strong>At our car showroom, we deeply respect your privacy and are
+            committed to protecting your personal information. When you visit
+            our showroom or interact with our staff, we may collect data such
+            as your name, contact details, and vehicle preferences to assist
+            you with your inquiries and provide tailored services. Be assured
+            that this information is handled with the utmost confidentiality
+            and is solely used for legitimate business purposes, such as
+            facilitating test drives, providing vehicle information, and
+            processing potential purchases. We do not share your personal data
+            with third parties for marketing purposes without your explicit
+            consent. Our detailed privacy policy, outlining our data
+            collection practices, your rights, and how we safeguard your
+            information, is readily available upon request and on our website
+            for your review, ensuring transparency and building trust in our
+            commitment to your privacy.
+          </strong>
+        </p>
+        <ul>
+          <h2>Types of Information Collected:</h2>
+
+          <li>
+            <p>
+              <strong>Contact Information:</strong> Name, address, email,
+              phone number for communication and service updates.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Vehicle Preferences:</strong> Details about the type,
+              make, model, and features of vehicles you're interested in.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Financial Information:</strong> Necessary for financing
+              and credit checks, including income, employment, and banking
+              details.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Trade-in Information:</strong> If you’re trading in a
+              vehicle, we collect its make, model, year, VIN, mileage, and
+              condition.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Showroom Visit Information:</strong> We may use security
+              cameras and visitor logs for security and service improvement.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Marketing Preferences:</strong> Your choices about how
+              we communicate with you (email, SMS, phone calls, etc.).
+            </p>
+          </li>
+        </ul>
+        <h2>Importance of Reviewing the Policy:</h2>
+        <p>
+          We encourage all visitors to carefully review this Privacy Policy
+          before sharing any personal data. Understanding our practices helps
+          you make informed decisions about your privacy.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <button onclick="togglePolicies()" class="button-82-pushable" role="button">
+    <span class="button-82-shadow"></span>
+    <span class="button-82-edge"></span>
+    <span class="button-82-front text"> Cookie Policy </span>
+  </button>
+
+  <div id="policies" class="hidden">
+    <div class="top">
+      <p>Explains your use of cookies or tracking tools.</p>
+
+      <ul>
+        <p class="key">Key points:</p>
+
+        <br />
+        <li>
+          <p>
+            Types of cookies used (e.g., analytics, functional, advertising)
+          </p>
+        </li>
+        <br />
+
+        <li>
+          <p class="last">Consent management (e.g., cookie banner)</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    function togglePolicies() {
+      const policies = document.getElementById("policies");
+      policies.classList.toggle("hidden");
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="Privacy_policy.css" />
+  <title>Terms of Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="Terms_Of_Service.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h2 id="logo">RAVENZ</h2>
+  <input type="checkbox" id="menu-toggle" />
+
+  <!-- الشرط الي بتفتح المنيو -->
+  <label class="MenuIcon" for="menu-toggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </label>
+
+  <!-- الحجات اللي جوا السايد بار -->
+  <div id="sidebar" class="sidebar">
+    <ul>
+      <li><a href="Home_Page.html">Home page</a></li>
+      <li><a href="CarBrands.html">Cars</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="contact_Us.html">Contact</a></li>
+      <li><a href="Privacy_policy.html">Privacy policy</a></li>
+    </ul>
+  </div>
+
+  <div class="headig">
+    <h1>Terms of Service</h1>
+    <p>
+      These Terms of Service outline the rules and regulations for the use of
+      the RAVENZ website. By accessing this site, you agree to accept all
+      terms and conditions stated here.
+    </p>
+  </div>
+
+  <hr />
+
+  <div class="container">
+    <section class="Privacy-policy">
+      <div class="Privacy-imge">
+
+      </div>
+
+      <div class="Privacy-content">
+        <p>
+          <strong>
+            By using RAVENZ services, you agree not to misuse the platform
+            in any way, including attempting to access restricted areas,
+            interfering with the system, or using content for unlawful
+            purposes. All users are responsible for maintaining the
+            confidentiality of their account details and are liable for any
+            activity under their account. We reserve the right to modify,
+            suspend, or discontinue services at any time without prior notice.
+            These terms may be updated periodically, and continued use of the
+            website constitutes your acceptance of any changes. Please review
+            the terms regularly.
+          </strong>
+        </p>
+        <ul>
+          <h2>Key Terms Include:</h2>
+
+          <li>
+            <p>
+              <strong>Account Responsibility:</strong> You are responsible for
+              safeguarding your login credentials and for all activities that
+              occur under your account.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Acceptable Use:</strong> Users must not engage in any
+              activity that disrupts or interferes with the website or
+              services provided.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Intellectual Property:</strong> All content, trademarks,
+              and data on this site are the property of RAVENZ and
+              protected by applicable laws.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Termination of Use:</strong> We may suspend or terminate
+              your access if you violate any of the terms outlined in this
+              agreement.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Limitation of Liability:</strong> RAVENZ is not
+              liable for any indirect, incidental, or consequential damages
+              arising from the use of our services.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Changes to Terms:</strong> We reserve the right to
+              revise these terms at any time. Continued use of the website
+              means you accept the updates.
+            </p>
+          </li>
+        </ul>
+        <h2>Review and Agreement:</h2>
+        <p>
+          We encourage all users to read these Terms of Service carefully. By
+          continuing to use our website, you acknowledge and agree to be bound
+          by these terms.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <button onclick="togglePolicies()" class="button-82-pushable" role="button">
+    <span class="button-82-shadow"></span>
+    <span class="button-82-edge"></span>
+    <span class="button-82-front text"> Cookie Policy </span>
+  </button>
+
+  <div id="policies" class="hidden">
+    <div class="top">
+      <p>Explains your use of cookies or tracking tools.</p>
+
+      <ul>
+        <p class="key">Key points:</p>
+
+        <br />
+        <li>
+          <p>
+            Types of cookies used (e.g., analytics, functional, advertising)
+          </p>
+        </li>
+        <br />
+
+        <li>
+          <p class="last">Consent management (e.g., cookie banner)</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    function togglePolicies() {
+      const policies = document.getElementById("policies");
+      policies.classList.toggle("hidden");
+    }
+  </script>
+</body>
+
+</html>

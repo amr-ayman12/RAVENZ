@@ -1,0 +1,305 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    direction: ltr;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    background: #000000;
+    scrollbar-width:none;
+    }
+
+
+.video1 {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#logo{
+    width: 100%;
+    height: 50px;
+    position:fixed;
+    top:0;
+    margin-top: 0;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+    z-index: 2;
+
+}
+
+#menu-toggle{
+    display: none;
+}
+/* خواص المنيو  */
+.MenuIcon{
+    
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+}
+/* التلت شرط */
+.MenuIcon div{
+    height: 4px;
+    background: #000000be;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.sidebar{
+    position: fixed;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: #00000097;
+    color: white;
+    padding-top: 60px;
+    transition: left 0.7s;
+    z-index: 2;
+    
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li{
+
+    border-bottom: 1px solid#a0a0a0;
+    padding: 15px;
+}
+.sidebar ul li a{
+    color: white; 
+    text-decoration: none;
+    
+}
+
+#menu-toggle:checked + .MenuIcon +.sidebar{
+    left: 0;
+}
+
+.categorys{
+    background-color: #000000;
+    text-align: center;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+}
+a{
+    cursor: pointer;
+    width: 40%;
+    background: none;
+    border-radius: 25px;
+    color: #b1b1b1;
+    font:bolder;
+    font-size: large;
+    padding: 10px;
+    opacity: 0.8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+a:hover{
+    opacity: 1;
+    transition: 0.7s;
+    background-color:#0000007b;
+    color: white;
+    padding: 4px;
+
+}
+.Discover {
+    margin: 50px 0 20px 0;
+    cursor: pointer;
+    width: 40%;
+    background: none;
+    border-radius: 25px;
+    color: #ffffff;
+    font:bolder;
+    font-size: large;
+    padding: 10px;
+    opacity: 0.7;
+    border-style:double;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    
+    
+}
+.Discover:hover{
+    background: #000000;
+    opacity: 1;
+    text-shadow: 6px -4px 8px #7a006a ;
+    transition: 0.7s;
+    transform:scale(1.1,1.1);
+}
+
+.logos{
+    text-align: center;
+    width: 100%;
+    background-color: #121212f6;
+    border-radius: 15px;
+
+}
+.logo{
+    display: grid;
+    display: inline;
+    grid-template-columns: repeat(3,1fr);
+    width: 8%;
+    height: 8%;
+    cursor: pointer;
+    margin: 20px ;
+    padding: 10px 70px ;
+
+    
+
+}
+#s {
+    display: flex;
+    
+}
+
+.car-box {
+    position: relative;
+    width: 30%;
+    margin: 100px 0px 0px 20px;
+}
+
+.cars {
+    width: 100%;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.cars:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.8s;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px black;
+}
+
+
+
+
+
+.footer {
+    background: linear-gradient(to bottom, #111, #000);
+    padding: 50px 20px;
+}
+
+.footer-top {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer-top h2 {
+    font-family: serif;
+    font-size: 36px;
+}
+
+.footer-top p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact {
+    margin-top: 20px;
+    background-color: #789ab5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-divider {
+    border-color: #444;
+    margin: 40px 0;
+    
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 20px;
+}
+
+.footer-links div a {
+    margin: 8px 0;
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#copy{
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: #6d6d6d;
+    padding: 10px;
+    margin: 20px 0 0 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.social_logo{
+    width: 29px;
+    height: 27px;
+    background: #6969698f;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+
+.discription h2{
+    color: #bebebe;
+    font-style: italic;
+    margin: 100px 0 20px 20px;
+    padding: 4px;
+    background-color: #0b01396a;
+    width:fit-content;
+    border-radius: 18px;
+    text-shadow: 1px 4px  8px rgb(155, 5, 197)  ;
+}
+
+.discription p {
+    margin: 25px;
+    padding: 7px;
+    font-size: 20px;
+    text-indent: 30px;
+    line-height: 30px;
+    color: #a0a0a0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #111111bb ;
+    width:fit-content;
+    border-radius: 18px;
+    text-shadow: 1px 4px  10px rgb(83, 83, 83)  ;
+
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="Home_Page.css">
+
+
+</head>
+<body>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- الشرط الي بتفتح المنيو -->
+    <label class="MenuIcon" for="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+
+    <!-- الحجات اللي جوا السايد بار -->
+    <div id="sidebar" class="sidebar">
+      <ul>
+
+        <li>  <a href="Home.html">Home page</a></li>
+        <li>  <a href="CarBrands.html">Cars</a></li>
+        <li>  <a href="About.html">About</a></li>
+        <li>  <a href="contact_Us.html">Contact</a></li>
+      </ul>
+    </div>
+
+
+
+
+    
+    <h1 id="logo"><b>RAVENZ</b></h1>
+
+
+    <div class="videos">
+      <video class="video1" id="video1" src="HomePage_1.mp4" autoplay loop muted></video>
+    </div>
+
+    <div class="categorys">
+      <span><a  class="category" href="CarBrands.html">Cars</a></span>
+      <span><a class="category" href="About.html">About</a></span>
+      <span><a class="category" href="contact_Us.html">Contact</a></span>
+    </div>
+
+    <div class="logos">
+      <div>
+      <img class="logo" src="logos/bentley.png" alt="">
+      <img class="logo" src="logos/bmw.png" alt="">
+      <img class="logo" src="logos/ferrari.png" alt="">
+      <img class="logo" src="logos/lotus.png" alt="">
+      <img class="logo" src="logos/maserati2.png" alt="">
+      <img class="logo" src="logos/rolls royce2.png" alt="">
+      <img class="logo" src="logos/mercedes.png" alt="">
+    </div>
+
+    <div>
+      <button class="Discover " onclick="Discover_All_Brands()">Discover All Brands</button>
+    </div>
+  </div>
+
+
+  
+
+    <div id="s">
+      <div class="car-box">
+        <a href="Mercedes_AMG_CLE_53.html">
+          <img class="cars" src="Mercedes/Mercedes CLE 53/Mercedes AMG CLE 53 (1).jpg">
+          <div class="text-overlay">Mercedes AMG CLE 53</div>
+        </a>
+      </div>
+    
+      <div class="car-box">
+        <a href="Rolls_Royce_phantom.html">
+          <img class="cars" src="Rolls Royce/Rolls Royce phantom/Rolls Royce phantom (5).jpg">
+          <div class="text-overlay">Rolls Royce Phantom</div>
+        </a>
+      </div>
+    
+      <div class="car-box">
+        <a href="Mercedes_Maybach.html">
+          <img class="cars" src="Mercedes/Mercedes-Maybach S-Class/Mercedes-Maybach S-Class (4).jpg">
+          <div class="text-overlay">Mercedes Maybach</div>
+        </a>
+      </div>
+    </div>
+    
+
+
+    <div class="discription">
+      <h2>Where Luxury Meets Performance?</h2>
+      <p>At RAVENZ, we don’t just sell cars — we deliver automotive excellence. Explore a handpicked selection of the world’s most iconic luxury vehicles, each combining breathtaking design, advanced technology, and unmatched craftsmanship.
+        From sleek sedans to high-performance SUVs and exotic supercars, our collection is designed for those who demand the best — in comfort, power, and prestige.
+        Whether you're a car enthusiast or a discerning buyer, RAVENZ is your destination for elegance on wheels. Let your journey to extraordinary driving experiences begin here.
+        RAVENZ – Drive the Dream. Own the Legend.</p>
+    </div>
+
+
+    <div id="s">
+      <div class="car-box">
+        <a href="Maserati_GranCabrio.html">
+          <img class="cars" src="Maserati/Maserati GranCabrio/Maserati GranCabrio (17).jpg">
+          <div class="text-overlay">Maserati GranCabrio</div>
+        </a>
+      </div>
+    
+      <div class="car-box">
+        <a href="Maserati_GranTurismo.html">
+          <img class="cars" src="Maserati/Maserati GranTurismo/Maserati GranTurismo (1).jpg">
+          <div class="text-overlay">Maserati GranTurismo</div>
+        </a>
+      </div>
+    
+      <div class="car-box">
+        <a href="Ferrari_f8.html">
+          <img class="cars" src="Ferrari/Ferrari f8/Ferrari f8 (5).jpg">
+          <div class="text-overlay">Ferrari f8</div>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>RAVENZ</h2>
+      <button class="contact" onclick="contact()">CONTACT US</button>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-links">
+      <div>
+        <a  href="">Models</a>
+        <a  href="">Atelier</a>
+        <a  href="">Dealer</a>
+        <a  href="">Press room</a>
+      </div>
+      <div>
+        <a href="">Rims</a>
+        <a href="">Boutique</a>
+        <a href="">Company</a>
+        <a href="">News</a>
+      </div>
+      <div>
+        <a href="">Cars for sale</a>
+        <a href="">Armouring</a>
+        <a href="">Careers</a>
+        <a href="contact_Us.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.facebook.com"><img class="social_logo" src="logos/f2.png"></a>
+      <a href="https://www.instagram.com"><img class="social_logo" src="logos/instagram.png"></a>
+      <a href="https://www.youtube.com"><img class="social_logo" src="logos/youT.png"></a>
+      <a href="https://www.x.com"><img class="social_logo" src="logos/x.png"></a>
+    </div> 
+    <div id="copy">&copy; 2025 RAVENZ. All rights reserved.</div>
+  </footer>
+
+  <script>
+    function Discover_All_Brands(){
+      window.location.href="CarBrands.html";
+  }
+    function contact(){
+      window.location.href="contact_Us.html";
+  }
+  //بقلل مستوى الصوت
+  window.addEventListener("DOMContentLoaded",function(){
+    const video = document.getElementById("video1");
+    video.volume =0.2;
+    //عشان الصوت يشتغل اول مدوس على الشاشاه
+    window.addEventListener("click", () => {
+      video.muted = false;
+    }, { once: true });
+    setTimeout(() => {
+      video.muted = true;
+    }, 36000);
+
+  });
+  </script>
+</body>
+</html>

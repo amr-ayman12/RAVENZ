@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+@font-face {
+  font-family: "mysign";
+  src: url("Signature.otf") format("truetype");
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  overflow:hidden;
+  color: white;
+  background: url('About background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.662);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1.2s ease-in-out;
+}
+
+header h1.glow {
+  margin: 0;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
+}
+
+header h1.glow:hover {
+  color: #ff4c4c;
+  text-shadow: 0 0 20px #ff4c4c, 0 0 30px #ff4c4c;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.container p {
+  line-height: 1.9;
+  font-size: 19px;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.signature {
+  text-align: end;
+  font-family: "mysign";
+  text-decoration: underline;
+  font-size: 22px;
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* خواص المنيو  */
+.MenuIcon {
+
+  width: 30px;
+  margin: 10px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+}
+
+/* التلت شرط */
+.MenuIcon div {
+  height: 4px;
+  background: #eeeeeebe;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.sidebar {
+  position: fixed;
+  left: -200px;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background: #00000097;
+  color: white;
+  padding-top: 60px;
+  transition: left 0.7s;
+  z-index: 2;
+
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+
+  border-bottom: 1px solid#a0a0a0;
+  padding: 15px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+
+}
+
+#menu-toggle:checked+.MenuIcon+.sidebar {
+  left: 0;
+}

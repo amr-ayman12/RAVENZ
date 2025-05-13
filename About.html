@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - RAVENZ</title>
+  <link rel="stylesheet" href="About.css" />
+</head>
+
+<body>
+  <div class="overlay">
+    <header>
+      <h1 class="glow">RAVENZ</h1>
+      <p id="typewriter" style="font-weight: bold; color: #ff4c4c"></p>
+
+      <input type="checkbox" id="menu-toggle" />
+
+      <!-- الشرط الي بتفتح المنيو -->
+      <label class="MenuIcon" for="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+
+      <!-- الحجات اللي جوا السايد بار -->
+      <div id="sidebar" class="sidebar">
+        <ul>
+          <li><a href="Home_Page.html">Home page</a></li>
+          <li><a href="CarBrands.html">Cars</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="contact_Us.html">Contact</a></li>
+          <li><a href="Privacy_policy.html">Privacy policy</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>About Us</h1>
+      <p>
+        At RAVENZ, we are passionate about cars and committed to
+        providing top-quality vehicles to our customers. With over years of
+        experience in the automotive industry, we’ve built a reputation for
+        reliability, transparency, and customer satisfaction.
+      </p>
+      <p>
+        We offer a wide range of new and used cars from leading brands, with
+        flexible financing options and after-sales support. Whether you are
+        looking for your first car or upgrading to something new, our team is
+        here to help you find the perfect match.
+      </p>
+      <p>
+        Visit our showroom or explore our online inventory to discover the
+        latest deals and exceptional vehicles. At RAVENZ, your journey
+        starts with trust.
+      </p>
+      <p class="signature">RAVENZ</p>
+    </div>
+
+    <footer>&copy; 2025 RAVENZ. All rights reserved.</footer>
+  </div>
+
+  <script>
+    const text =
+      "Your Car, Your Choice... Innovation, Performance, Elegance!";
+    let index = 0;
+    function typeWriter() {
+      if (index < text.length) {
+        document.getElementById("typewriter").textContent +=
+          text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 80);
+      }
+    }
+    typeWriter();
+  </script>
+</body>
+
+</html>

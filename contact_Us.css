@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url("Contact-Us background.jpeg");
+    background-position: center;
+    position: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.icon {
+    width: 200px;
+    float: center;
+    height: 70px;    
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 35px;
+    font-family: sans-serif;
+    padding-left: 200%;
+    transition: 1.5s;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+
+.contact {
+
+    color: #fffffe;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+
+
+
+}
+
+
+/* start  3 line*/
+.main .navbar .menu {
+    position: relative;
+    padding-left: -5%;
+    float: left;
+    padding-top: -1px;
+    margin-top: -30px;
+
+
+}
+
+.main .menu:hover .icon span:nth-child(2) {
+    width: 100%;
+
+
+}
+
+.main .navbar .menu .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 22px;
+    cursor: pointer;
+
+
+}
+
+.main .navbar .menu .icon span {
+    background-color: #e1dada;
+    margin-bottom: 5px;
+
+
+}
+
+.main .navbar .menu .icon span:first-child {
+    background-color: #ffffff;
+    height: 2px;
+    width: 100%;
+}
+
+.main .navbar .menu .icon span:nth-child(2) {
+    background-color: #ddd;
+    height: 2px;
+    width: 60%;
+    transition: 0.3s;
+}
+
+.main .navbar .menu .icon span:last-child {
+    background-color: #ddd;
+    height: 2px;
+    width: 100%;
+}
+
+
+
+.main .navbar .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    position: absolute;
+    left: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+
+
+
+}
+
+
+.main .navbar .menu ul::before {
+    content: "";
+    border-width: 11px;
+    border-style: solid;
+    border-color: transparent transparent #dfdfdf transparent;
+    position: absolute;
+    left: 5px;
+    top: -20px;
+
+
+}
+
+
+.main .navbar .menu:hover ul {
+    display: block;
+
+
+}
+
+.main .navbar .menu ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #0a0a0a;
+    transition: 0.3s;
+
+
+
+}
+
+.main .navbar .menu ul li a:hover {
+    padding-left: 25px;
+
+
+}
+
+.main .navbar .menu ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+
+}
+
+/* end */
+
+
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #000359;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover {
+    background-color: #fff;
+}
+
+
+.form {
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+    position: relative;
+    top: 0px;
+    left: 870px;
+    transform: translate(0%, -5%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 0;
+}
+
+.form h2 {
+    width: 250px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #e8e5e2;
+    font-size: 15px;
+    background-color: #010101;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #0c0280;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: Arial;
+}
+
+
+
+
+/* soical media */
+.form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #691a1a;
+}
+
+.liw {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons ion-icon {
+    color: #fff;
+    font-size: 30px;
+    padding-left: 16%;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover {
+    color: #1f27b0;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    .navbar,
+    .content {
+        width: 90%;
+    }
+
+    .form {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .icon,
+    .menu {
+        float: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin: 0;
+        text-align: center;
+        float: none;
+    }
+
+    .contact {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .content .par {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .form {
+        width: 90%;
+        height: auto;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 20px;
+    }
+
+    .form input {
+        width: 100%;
+    }
+
+    .content {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+}

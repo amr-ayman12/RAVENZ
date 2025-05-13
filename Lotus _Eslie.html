@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lotus Elise </title>
+  <link rel="stylesheet" href="ITprojectDetail1.css">
+</head>
+
+<body>
+
+  <h2 id="logo">RAVENZ</h2>
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- الشرط الي بتفتح المنيو -->
+  <label class="MenuIcon" for="menu-toggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </label>
+
+  <!-- الحجات اللي جوا السايد بار -->
+  <div id="sidebar" class="sidebar">
+    <ul>
+      <li> <a href="Home_Page.html">Home page</a> </li>
+      <li> <a href="CarBrands.html">Cars</a> </li>
+      <li> <a href="About.html">About</a> </li>
+      <li> <a href="contact_Us.html">Contact</a> </li>
+      <li> <a href="Privacy_policy.html">Privacy policy</a> </li>
+
+    </ul>
+  </div>
+
+
+
+  <div class="slider">
+    <div class="slides">
+      <img src="Lotus/Lotus eslie/Lotus elise (3).jpg" class="slide" />
+      <img src="Lotus/Lotus eslie/Lotus elise (1).jpg" class="slide" />
+      <img src="Lotus/Lotus eslie/Lotus elise (2).jpg" class="slide" />
+      <img src="Lotus/Lotus eslie/Lotus elise (4).jpg" class="slide" />
+      <img src="Lotus/Lotus eslie/Lotus elise (5).jpg" class="slide" />
+
+    </div>
+
+
+
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+
+
+  <!-- مواصفات العربيه-->
+
+  <div class="content">
+    <div class="CarContainer">
+      <h1 class="CarTitle">Lotus Elise</h1>
+
+      <div>
+        <div id="overview" class="CarSection">
+          <h3>Overview:</h3>
+          <p>
+            The <strong>Lotus Elise</strong> is the embodiment of lightweight engineering and pure driving pleasure.
+            With its minimalist design and track-focused performance, the Elise is built for driving purists. Its
+            sculpted aerodynamics and compact chassis make it agile, responsive, and exhilarating at every turn. Whether
+            carving corners on a mountain road or feeling the thrill on a racetrack, the Lotus Elise delivers a driving
+            experience like no other.
+          </p>
+        </div>
+        <div>
+          <img class="img1" src="Lotus/Lotus eslie/Lotus elise (5).jpg" alt="">
+        </div>
+      </div>
+
+      <div id="space1" class="space"></div>
+
+      <div>
+        <img class="img2" src="Lotus/Lotus eslie/Lotus elise (1).jpg" alt="">
+      </div>
+      <div id="Technical" class="CarSection CarSpecs">
+        <h3>Technical Specifications:</h3>
+        <div>
+          <ul>
+            <li>1.8L 4-cylinder supercharged engine</li>
+            <li>Produces 243 horsepower and 250 Nm of torque</li>
+            <li>Acceleration from 0 to 100 km/h in just 4.3 seconds</li>
+            <li>6-speed manual transmission for raw driving control</li>
+            <li>Rear-wheel drive with limited-slip differential</li>
+            <li>Lightweight bonded aluminum chassis (only 924 kg)</li>
+            <li>Top speed of 240 km/h</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="space2" class="space"></div>
+
+      <div id="Interior" class="CarSection">
+        <h3>Interior & Features:</h3>
+        <div>
+          <ul>
+            <li>Minimalist driver-focused cockpit</li>
+            <li>Lightweight sports bucket seats</li>
+            <li>Aluminum foot pedals and exposed metal elements</li>
+            <li>Air conditioning and compact digital display</li>
+            <li>Optional removable soft-top or hard-top roof</li>
+            <li>Bluetooth audio with USB connectivity</li>
+            <li>Compact storage compartments for essentials</li>
+          </ul>
+        </div>
+        <div>
+          <img class="img3" src="Lotus/Lotus eslie/Lotus elise (6).jpg" alt="">
+        </div>
+      </div>
+
+      <div id="space3" class="space"></div>
+
+      <div>
+        <img class="img4" src="Lotus/Lotus eslie/Lotus elise (4).jpg" alt="">
+      </div>
+      <div id="Driving" class="CarSection">
+        <h3>Driving Experience:</h3>
+        <p>
+          The Lotus Elise offers a raw and connected driving sensation that few cars can match. Its precise steering,
+          race-inspired suspension, and feather-light weight provide immediate feedback and total control. There’s no
+          power steering or unnecessary insulation—just pure mechanical connection between the driver and the road.
+          Every rev, every turn, every gear shift is an invitation to enjoy the essence of performance.
+        </p>
+      </div>
+
+      <div id="space4" class="space"></div>
+
+      <div id="Safety" class="CarSection">
+        <h3>Safety & Technology:</h3>
+        <ul>
+          <li>Lightweight aluminum safety cell</li>
+          <li>Driver and passenger airbags</li>
+          <li>ABS and traction control system</li>
+          <li>Roll-over protection structure (ROPS)</li>
+          <li>High-performance braking system with ventilated discs</li>
+        </ul>
+      </div>
+
+      <div id="space5" class="space"></div>
+
+      <div id="Why" class="CarSection">
+        <h3 class="Why">Why Choose the Lotus Elise?</h3>
+        <p>
+          The Lotus Elise is not just a car — it’s a celebration of driving in its purest form. Every aspect is
+          engineered with weight savings, agility, and performance in mind. For those who value connection over
+          convenience, precision over polish, and emotion over excess, the Elise is a true driver’s car.
+          From its iconic mid-engine layout to its no-frills interior, the Elise focuses on delivering an unfiltered
+          experience that rewards skill and passion. It's a car that doesn’t just move you — it challenges and excites
+          you at every kilometer.
+          If your idea of luxury is the perfect apex and the feel of the road beneath you, the Lotus Elise is your
+          ultimate companion.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script> let currentIndex = 0;
+
+    function moveSlide(step) {
+      const slides = document.querySelectorAll(".slide");
+      currentIndex += step;
+
+      if (currentIndex >= slides.length) currentIndex = 0;
+      if (currentIndex < 0) currentIndex = slides.length - 1;
+
+      const slideWidth = slides[0].clientWidth;
+      document.querySelector(".slides").style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+    }
+  </script>
+</body>
+
+</html>

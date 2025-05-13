@@ -1,0 +1,199 @@
+#logo {
+    width: 97%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    font-size: xx-large;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #c4c1c4;
+    background-color: rgba(53, 53, 53, 0.479);
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+    z-index: 3;
+
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* خواص المنيو  */
+.MenuIcon {
+
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+}
+
+/* التلت شرط */
+.MenuIcon div {
+    height: 4px;
+    background: #eeeeeebe;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.sidebar {
+    position: fixed;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: #00000097;
+    color: white;
+    padding-top: 60px;
+    transition: left 0.7s;
+    z-index: 2;
+
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+
+    border-bottom: 1px solid#a0a0a0;
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+#menu-toggle:checked+.MenuIcon+.sidebar {
+    left: 0;
+}
+
+
+body {
+    font-family: 'Cairo', sans-serif;
+    /* background-image:linear-gradient(to top,rgba(0, 0, 0, 0.468),rgba(0, 0, 0, 0.45)), url(bc.jpg); */
+    background: black;
+    object-fit: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.brand {
+    background-color: #1e1e1e72;
+    border: 1px solid #33333343;
+    margin-bottom: 40px;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+
+.brand h2 {
+    color: #59008d;
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.brand-description {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 25px;
+    color: #959595;
+    margin-bottom: 25px;
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.car {
+    background-color: #2a2a2a3b;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 30px);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.car:hover {
+    background-color: #181818d6;
+    transition: 0.8s;
+}
+
+.car img {
+    max-width: 100%;
+    height: 60%;
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.car img:hover {
+    transform: scale(1.07);
+    transition: 0.5s;
+}
+
+
+.car button {
+    display: block;
+    text-decoration: none;
+    color: #f6f6f6;
+    padding: 10px 13px;
+    margin: 5px 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: none;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    width: 90%;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+
+.car button:hover {
+    text-decoration: none;
+    transition: 0.6s;
+    background: #000000e9;
+    padding: 10px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 90%;
+
+
+}
+
+.car button:active {
+    text-decoration: none;
+    background: rgba(4, 40, 139, 0.454);
+    padding: 5px 12px;
+    padding-block: 5px;
+    scroll-padding: 5px 12px;
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    .car {
+        flex: 1 1 100%;
+
+    }
+}
